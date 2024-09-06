@@ -10,7 +10,8 @@
         }, 1);
     };
     spinner(0);
-    // Function to type the text
+
+   // Function to type the text
 function typeText(element, text, delay = 100) {
     let i = 0;
     function typing() {
@@ -45,8 +46,8 @@ var preloader = function () {
 };
 
 window.onload = function() {
-    var typingElement = document.getElementById('typing-text');
-    typeText(typingElement, "ABBA Printers", 100); // Adjust typing speed here
+     var typingElement = document.getElementById('typing-text');
+     typeText(typingElement, "ABBA PRINTERS", 150); // Adjust typing speed here
 };
 
     
