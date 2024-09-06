@@ -163,7 +163,7 @@
 .btn.btn-light:hover {
     color: var(--bs-white);
     background: var(--bs-primary);
-}
+} 
 
 
 /*** Topbar Start ***/
@@ -202,7 +202,7 @@
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    /* color: var(--bs-white); */
+    color: var(--bs-white); 
     font-size: 17px;
     font-weight: 400;
     outline: none;
