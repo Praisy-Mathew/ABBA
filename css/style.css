@@ -2,8 +2,8 @@
 /*** Spinner Start ***/
 /*** Spinner ***/
 :root {
-    --bs-primary: #1576df; /* Updated primary color to blue */
-    --bs-dark: #0d76df;
+    --bs-primary: #0028AF; /* Updated primary color to blue */
+    --bs-dark: #00163b;
     --bs-white: #ffffff;
     --bs-light: #f8f9fa;
 }
@@ -44,7 +44,7 @@
     top: 0;
     width: 50%;
     height: 100%;
-    background: #000;
+    background: white;
     /* background: linear-gradient(135deg, #0000FF, #FFFFFF); Blue and white gradient */
     z-index: 10000;
     transition: transform 1.5s ease;
@@ -87,7 +87,7 @@
     font-size: 4rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
-    color: white; /* Change text color */
+    color: black; /* Change text color */
 }
 
 
@@ -146,7 +146,7 @@
 
 .btn.btn-primary {
     color: #fff;
-    background-color: #1576df;;
+    background-color:#0028AF ;
     border: none;
 }
 
@@ -458,7 +458,7 @@
 
 /*** Single Page Hero Header Start ***/
 .text-primary {
-    color: #0d5bf0 !important;
+    color: #0028AF !important;
 }
 .bg-breadcrumb {
     position: relative;

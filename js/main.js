@@ -47,7 +47,7 @@ var preloader = function () {
 
 window.onload = function() {
      var typingElement = document.getElementById('typing-text');
-     typeText(typingElement, "ABBA PRINTERS", 150); // Adjust typing speed here
+     typeText(typingElement, "ABBA PRINTING PRESS L.L.C", 150); // Adjust typing speed here
 };
 
     
