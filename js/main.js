@@ -30,25 +30,52 @@ function typeText(element, text, delay = 100) {
 }
 
 // Preloader (Hide after page load with sliding effect)
+// var preloader = function () {
+//     setTimeout(function () {
+//         if ($('#preloader').length > 0) {
+            // Add the class to trigger the curtain animation
+//             $('#preloader').addClass('hide-preloader');
+
+//             // After the sliding animation ends, remove the preloader and show the content
+//             setTimeout(function () {
+//                 $('#preloader').remove();
+//                 $('#main-content').fadeIn('slow'); // Show main content
+//             }, 1500); // Matches the slide animation duration
+//         }
+//     }, 1500); // Adjust the delay as needed
+// };
+
+
+// window.onload = function() {
+//      var typingElement = document.getElementById('typing-text');
+//      typeText(typingElement, "ABBA PRINTING PRESS L.L.C", 150); // Adjust typing speed here
+// };
 var preloader = function () {
     setTimeout(function () {
         if ($('#preloader').length > 0) {
-            // Add the class to trigger the curtain animation
+            // Add class to trigger curtain animation
             $('#preloader').addClass('hide-preloader');
 
             // After the sliding animation ends, remove the preloader and show the content
             setTimeout(function () {
-                $('#preloader').remove();
-                $('#main-content').fadeIn('slow'); // Show main content
+                $('#preloader').remove();  // Remove preloader
+                $('#main-content').fadeIn('slow');  // Show main content
             }, 1500); // Matches the slide animation duration
         }
-    }, 1500); // Adjust the delay as needed
+    }, 1500); // Adjust the delay if needed
 };
 
 window.onload = function() {
-     var typingElement = document.getElementById('typing-text');
-     typeText(typingElement, "ABBA PRINTING PRESS L.L.C", 150); // Adjust typing speed here
+    var preloaderImage = document.getElementById('preloader-image');
+    // You can manipulate the image if needed here (e.g., change source, style, etc.)
+    if (preloaderImage) {
+        // Example: preloaderImage.style.border = '2px solid red'; // Add custom styling if needed
+    }
+
+    // Call preloader function once window is fully loaded
+    preloader();
 };
+
 
     
     // Initiate the wowjs

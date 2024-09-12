@@ -2,8 +2,8 @@
 /*** Spinner Start ***/
 /*** Spinner ***/
 :root {
-    --bs-primary: #0028AF; /* Updated primary color to blue */
-    --bs-dark: #00163b;
+    --bs-primary:#284881 ; /* Updated primary color to blue */
+    --bs-dark:rgb(15, 4, 4);
     --bs-white: #ffffff;
     --bs-light: #f8f9fa;
 }
@@ -22,7 +22,7 @@
 }
 /*** Spinner End ***/
 
-/* Preloader wrapper */
+/* Preloader container styling */
 #preloader {
     position: fixed;
     top: 0;
@@ -81,16 +81,40 @@
 }
 .hide-preloader .preloader-content {
     opacity: 0; /* Fade out text when preloader hides */
-}
-
-#typing-text {
-    font-size: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    color: black; /* Change text color */
+    transition: opacity .1s ease; /* Slow down fade-out when hiding preloader */
 }
 
 
+/* Animation for image */
+#preloader-image {
+    opacity: 0; /* Initially hidden */
+    transform: scale(0.9); /* Start slightly smaller */
+    animation: fadeInUp 2.5s ease forwards, pulse 2s infinite ease-in-out 3s; /* Combination of fade-in, scale, and pulse */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3)); /* Add a subtle shadow effect */
+    border-radius: 15px; /* Rounded corners for a smoother feel */
+}
+
+/* Keyframes for fade-in and upward motion */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(30px); /* Start smaller and slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0); /* End at normal size and position */
+    }
+}
+
+/* Pulse animation for subtle zoom effect */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.7s); /* Slight zoom for pulse effect */
+    }
+}
 
 
 .back-to-top {
@@ -146,7 +170,7 @@
 
 .btn.btn-primary {
     color: #fff;
-    background-color:#0028AF ;
+    background-color:#284881 ;
     border: none;
 }
 
@@ -458,7 +482,7 @@
 
 /*** Single Page Hero Header Start ***/
 .text-primary {
-    color: #0028AF !important;
+    color: #284881 !important;
 }
 .bg-breadcrumb {
     position: relative;
@@ -953,7 +977,8 @@
 
 /*** Footer Start ***/
 .footer {
-    background: var(--bs-secondary);
+    background: var(--bs-light);
+    color: #284881  !important;
 }
 
 .footer .footer-item {
@@ -963,7 +988,7 @@
 
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: var(--bs-primary);
     transition: 0.5s;
 }
 
@@ -981,7 +1006,7 @@
 }
 
 .footer .footer-item .footer-btn a:hover {
-    background: var(--bs-white);
+    background: var(--bs-primary);
 }
 
 .footer .footer-item .footer-btn a:hover i {
@@ -991,7 +1016,7 @@
 
 /*** copyright Start ***/
 .copyright {
-    background: var(--bs-dark);
+    background: var(--bs-primary);
 }
 /*** copyright end ***/
 
