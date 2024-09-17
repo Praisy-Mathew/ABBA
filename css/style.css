@@ -1020,4 +1020,7 @@
 }
 /*** copyright end ***/
 
+.d-flex.align-items-start i {
+    margin-top: 0.9rem; /* Adjust icon alignment */
+}
 
